@@ -1,14 +1,14 @@
 {
-  "name": "descript2-memcached",
-  "version": "2.0.1",
-  "description": " memcached plugin for descript2",
+  "name": "descript-memcached",
+  "version": "3.0.0",
+  "description": " memcached plugin for descript",
   "main": "index.js",
   "scripts": {
     "test": "eslint ."
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/doochik/descript2-memcached.git"
+    "url": "git+https://github.com/doochik/descript-memcached.git"
   },
   "keywords": [
     "descript2",
@@ -17,21 +17,20 @@
   "author": "Aleksei Androsov <doochik@ya.ru>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/doochik/descript2-memcached/issues"
+    "url": "https://github.com/doochik/descript-memcached/issues"
   },
-  "homepage": "https://github.com/doochik/descript2-memcached#readme",
+  "homepage": "https://github.com/doochik/descript-memcached#readme",
   "engines": {
-    "node": ">= 8.0.0"
+    "node": ">= 10.0.0"
   },
   "dependencies": {
     "contimer": "^1.0.0",
     "memcached": "^2.2.2"
   },
   "peerDependencies": {
-    "descript2": ">=0.0.34",
-    "nommon": "*"
+    "descript": ">=3"
   },
   "devDependencies": {
-    "eslint": "^4.19.1"
+    "eslint": "^5.16.0"
   }
 }
