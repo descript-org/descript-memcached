@@ -23,6 +23,10 @@ class DescriptMemcached {
         });
     }
 
+    getClient() {
+        return this._client;
+    }
+
     get({ key, context }) {
         const normalizedKey = this.normalizeKey(key);
 
