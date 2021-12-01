@@ -6,6 +6,9 @@
   "scripts": {
     "test": "eslint ."
   },
+  "files": [
+    "index.js"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/doochik/descript-memcached.git"
