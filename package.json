@@ -31,6 +31,6 @@
     "descript": ">=3"
   },
   "devDependencies": {
-    "eslint": "^7.1.0"
+    "eslint": "^7.32.0"
   }
 }
