@@ -110,7 +110,7 @@ class DescriptMemcached {
                         const totalTimer = totalTimerStop();
                         this._log({
                             type: DescriptMemcached.EVENT.MEMCACHED_JSON_PARSING_FAILED,
-                            data,
+                            rawData: data,
                             error,
                             key,
                             normalizedKey,
@@ -129,7 +129,8 @@ class DescriptMemcached {
                     const totalTimer = totalTimerStop();
                     this._log({
                         type: DescriptMemcached.EVENT.MEMCACHED_READ_DONE,
-                        data,
+                        data: parsedValue,
+                        rawData: data,
                         key,
                         normalizedKey,
                         timers: {
@@ -163,6 +164,7 @@ class DescriptMemcached {
             const safeMemcachedValue = {
                 status_code: value.status_code,
                 headers: value.headers,
+                request_id: value?.request_options?.http_options?.headers['x-request-id'] || '',
                 result: value.result,
             };
 

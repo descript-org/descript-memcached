@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/doochik/descript-memcached#readme",
   "engines": {
-    "node": ">= 10.0.0"
+    "node": ">= 14.0.0"
   },
   "dependencies": {
     "contimer": "^1.0.0",
